@@ -38,3 +38,10 @@ All of the following should be documented every time you start up the program, b
  - Use `s` to skip the loaded file.
  - Use `l` to enable loop playback on this file. You can also combine with `p` or `s`, so either `pl` or `ls` to loop previous or next file.
  - Use `goto <cue>` to go to the index of a file you wish to play. For example, if I have `First File.mp3`, `Second File.mp3`, and `Third File.mp3` loaded in that order and I'm at `First File.mp3` and want to be at `Third File.mp3`, I would type `goto 3`. Consult the order listed when you start the script to know which number correlates to which file. **This option does NOT immediatly start playing after you hit enter!** Rather, it takes you to the file you request and gives you another prompt to play it with any options you specify.
+
+# License (GPLv3)
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>. 

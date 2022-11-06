@@ -1,5 +1,7 @@
 # Folder Audio Playlist
-Simple script to play all audio files in folder alphabetically using the cvlc command line program. Can play next file by simply hitting the enter key, plus a couple other features to change playback options.
+Simple script to play all audio files in folder alphabetically using the `cvlc` command line program. Can play next file by simply hitting the enter key, plus a couple other features to change playback options.
+
+I created this script as a way of running Sound for a theater, and a lot of the language used within, as well as its functionality, was intended to be used this way. This is my ideal program of running sound cues during a production of any musical or play a theater may put on.
 
 ## Installation
 This script was designed to run on Linux, though it can work on Windows with some modifications of the code. For example, instead of putting backslashes in front of every space, the Windows syntax will use double quotes around the file name. Command arguments work differently on Windows, too, so you'll need to find the alternatives and work those in the script.

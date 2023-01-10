@@ -4,9 +4,9 @@ Simple script to play all audio files in folder alphabetically using the `cvlc` 
 I created this script as a way of running Sound for a theater, and a lot of the language used within, as well as its functionality, was intended to be used this way. This is my ideal program of running sound cues during a production of any musical or play a theater may put on.
 
 ## Installation
-This script was designed to run on Linux, though it can work on Windows with some modifications of the code. For example, instead of putting backslashes in front of every space, the Windows syntax will use double quotes around the file name. Command arguments work differently on Windows, too, so you'll need to find the alternatives and work those in the script.
+This script was designed to run on Linux. **I highly recommend NOT running this script under Windows!!! I will not provide Windows instructions because of this.** After some testing in a VM, you need to edit multiple lines of code and it will still not work 100%. For example, Keyboard Interrupts do not work the same way in Windows as they do in Linux. That was the only way I implemented to stop playback, so the only way to stop in the middle of an audio file playing is to kill VLC from Task Manager. This also makes functions such as looping playback basically broken.
 
-Regardless of the platform you are installing on, you will need to make sure VLC Media Player is installed on your system, ensuring the `cvlc` command line program is also installed. This script calls on `cvlc` to play the actual files, so the program is required for any functionality. Head on over to [VLC's Download Page](https://www.videolan.org/vlc/) to download VLC if you are on Windows or MacOS. If you are on Linux, it is recommended to download VLC from your distro's repositories:
+Regardless of the platform you are installing on, you will need to make sure VLC Media Player is installed on your system, ensuring the `cvlc` command line program is also installed. This script calls on `cvlc` to play the actual files, so the program is required for any functionality. Head on over to [VLC's Download Page](https://www.videolan.org/vlc/) to download VLC if you are a different Operating System. If you are on Linux, it is recommended to download VLC from your distro's repositories:
 
 Debian/Ubuntu: `sudo apt install vlc`
 
@@ -14,11 +14,7 @@ Fedora/DNF Distros: `sudo dnf install vlc`
 
 Arch: `sudo pacman -S vlc`
 
-If you are on Windows, double check that `cvlc` is in your PATH Environment Variable.
-
-Now you need to make sure Python 3 is installed on your system. If you run almost any Linux Distro, it should already be there. If you are on Ubuntu systems, the package and program is `python3`, while if you are on almost any other distro it will most likely be `python`.
-
-If you run Windows, go to the [Python Downloads Page](https://www.python.org/downloads/windows/) to download Python 3. Make sure you hit the tick box in the Installer to add Python to your PATH, this will make running this script much easier.
+Now you need to make sure Python 3 is installed on your system. If you run almost any Linux Distro, it should already be there. If you are on Ubuntu systems, the package and program is `python3`, while if you are on almost any other distro it will most likely be `python`. to download Python 3. Make sure you hit the tick box in the Installer to add Python to your PATH, this will make running this script much easier.
 
 If you run MacOS, unfortunately I don't hold the information about installing and running Python. Consult Google on this matter, I have never owned a Mac and thus don't know the procedure.
 
@@ -32,7 +28,7 @@ You may want to rename the music files to an order of your liking - the script u
 **It should also be noted that the script will only load in files with the extension of .mp3, .wav, and .ogg.**
 
 ### Running at the Command Prompt or Terminal
-Place the script in the folder of music you wish to play, then open up a Command Prompt (Windows) or Terminal (MacOS, Linux) and `cd` to the correct directory. If you don't know how to do this, consult Mr. Google. From here, if you are on basically any system except Ubuntu, type `python playAudioList.py`. If you are on an Ubuntu based system, use `python3 playAudioList.py`. It should load everything in and you should see every file loaded in, and their playback order. Wait a second, and then hit enter to play when you see `Press Enter to Play (with options?)...`.
+Place the script in the folder of music you wish to play, then open up a  Terminal (MacOS, Linux) and `cd` to the correct directory. If you don't know how to do this, consult Mr. Google. From here, if you are on basically any system except Ubuntu, type `python playAudioList.py`. If you are on an Ubuntu based system, use `python3 playAudioList.py`. It should load everything in and you should see every file loaded in, and their playback order. Wait a second, and then hit enter to play when you see `Press Enter to Play (with options?)...`.
 
 ## Playback Options
 All of the following should be documented every time you start up the program, but here they are in this readme as well!
